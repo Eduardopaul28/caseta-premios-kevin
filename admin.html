@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Premios</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #111; color: #fff; }
+    input, button, select { padding: 8px; margin: 5px 0; width: 100%; }
+    ul { list-style: none; padding: 0; }
+    li { background: #222; padding: 5px; margin-bottom: 5px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Panel de Administración</h2>
+  <label>Puntos:</label>
+  <input id="puntos" type="number" min="1" placeholder="Ej: 5">
+  <label>Premio:</label>
+  <input id="nombre" placeholder="Nombre del premio">
+  <button onclick="agregarPremio()">Añadir</button>
+  <ul id="lista"></ul>
+
+  <script>
+    let premios = [];
+    fetch('premios.json')
+      .then(res => res.json())
+      .then(data => {
+        premios = data;
+        render();
+      });
+
+    function agregarPremio() {
+      const puntos = parseInt(document.getElementById('puntos').value);
+      const nombre = document.getElementById('nombre').value.trim();
+      if (!puntos || !nombre) return alert('Completa ambos campos');
+
+      let categoria = premios.find(c => c.puntos === puntos);
+      if (!categoria) {
+        categoria = { puntos, premios: [] };
+        premios.push(categoria);
+        premios.sort((a, b) => a.puntos - b.puntos);
+      }
+      categoria.premios.push(nombre);
+      render();
+    }
+
+    function render() {
+      const lista = document.getElementById('lista');
+      lista.innerHTML = '';
+      premios.forEach(cat => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${cat.puntos} pts:</strong> ${cat.premios.join(', ')}`;
+        lista.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('img/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  color: gold;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+.premios {
+  margin-top: 20px;
+}
+
+.categoria {
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.categoria h2 {
+  color: gold;
+  font-size: 1.4em;
+}
+
+.categoria ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categoria li {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid gold;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.nota {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
