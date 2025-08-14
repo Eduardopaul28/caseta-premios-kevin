@@ -8,34 +8,64 @@
     body { font-family: Arial; padding: 20px; background: #111; color: #fff; }
     input, button { padding: 8px; margin: 5px 0; width: 100%; }
     ul { list-style: none; padding: 0; }
-    li { background: #222; padding: 5px; margin-bottom: 5px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+    li { background: #222; padding: 5px; margin-bottom: 5px; border-radius: 5px;
+         display: flex; justify-content: space-between; align-items: center; }
     li span { flex-grow: 1; }
-    button.delete { background: red; color: #fff; border: none; cursor: pointer; padding: 4px 8px; border-radius: 4px; }
+    button.delete { background: red; color: #fff; border: none; cursor: pointer;
+                    padding: 4px 8px; border-radius: 4px; }
     button.delete:hover { background: darkred; }
+    .hidden { display: none; }
+    .login { background: #222; padding: 20px; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <h2>Panel de Administración</h2>
-  <label>Puntos:</label>
-  <input id="puntos" type="number" min="1" placeholder="Ej: 5">
-  <label>Premio:</label>
-  <input id="nombre" placeholder="Nombre del premio">
-  <button onclick="agregarPremio()">Añadir Premio</button>
-  <hr>
-  <ul id="lista"></ul>
+
+  <div id="login" class="login">
+    <h2>Acceso administrador</h2>
+    <label>Token de GitHub:</label>
+    <input type="password" id="token" placeholder="Introduce tu token">
+    <button onclick="iniciarSesion()">Entrar</button>
+  </div>
+
+  <div id="panel" class="hidden">
+    <h2>Panel de Administración</h2>
+    <label>Puntos:</label>
+    <input id="puntos" type="number" min="1" placeholder="Ej: 5">
+    <label>Premio:</label>
+    <input id="nombre" placeholder="Nombre del premio">
+    <button onclick="agregarPremio()">Añadir Premio</button>
+    <hr>
+    <ul id="lista"></ul>
+    <hr>
+    <button onclick="guardarEnGitHub()">💾 Guardar cambios en GitHub</button>
+  </div>
 
   <script>
+    // Configuración fija
+    const owner = "eduardopaul28"; // Tu usuario de GitHub
+    const repo = "caseta-premios-kevin"; // Nombre del repo
+    const pathFile = "premios.json";
+    let tokenGitHub = "";
     let premios = [];
 
-    // Cargar premios desde el JSON
-    fetch('premios.json')
-      .then(res => res.json())
-      .then(data => {
-        premios = data;
-        render();
-      });
+    // Mostrar panel si se inicia sesión
+    function iniciarSesion() {
+      tokenGitHub = document.getElementById("token").value.trim();
+      if (!tokenGitHub) return alert("Introduce tu token de GitHub");
+      document.getElementById("login").classList.add("hidden");
+      document.getElementById("panel").classList.remove("hidden");
+      cargarPremios();
+    }
 
-    // Renderizar la lista de premios
+    // Cargar premios desde GitHub
+    async function cargarPremios() {
+      const url = `https://raw.githubusercontent.com/${owner}/${repo}/main/${pathFile}`;
+      const res = await fetch(url);
+      premios = await res.json();
+      render();
+    }
+
+    // Mostrar lista en pantalla
     function render() {
       const lista = document.getElementById('lista');
       lista.innerHTML = '';
@@ -56,7 +86,6 @@
       const puntos = parseInt(document.getElementById('puntos').value);
       const nombre = document.getElementById('nombre').value.trim();
       if (!puntos || !nombre) return alert('Completa ambos campos');
-
       let categoria = premios.find(c => c.puntos === puntos);
       if (!categoria) {
         categoria = { puntos, premios: [] };
@@ -74,6 +103,36 @@
       if (!categoria) return;
       categoria.premios.splice(index, 1);
       render();
+    }
+
+    // Guardar cambios en GitHub
+    async function guardarEnGitHub() {
+      const getShaUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${pathFile}`;
+      const shaRes = await fetch(getShaUrl);
+      const shaData = await shaRes.json();
+      const sha = shaData.sha;
+
+      const contenido = btoa(unescape(encodeURIComponent(JSON.stringify(premios, null, 2))));
+      const body = {
+        message: "Actualizar premios.json desde panel admin",
+        content: contenido,
+        sha: sha
+      };
+
+      const res = await fetch(getShaUrl, {
+        method: "PUT",
+        headers: {
+          "Authorization": `token ${tokenGitHub}`,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (res.ok) {
+        alert("✅ Premios actualizados correctamente en GitHub");
+      } else {
+        alert("❌ Error al guardar en GitHub");
+      }
     }
   </script>
 </body>
