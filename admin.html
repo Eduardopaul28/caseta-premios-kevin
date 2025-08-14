@@ -6,9 +6,12 @@
   <title>Panel de Premios</title>
   <style>
     body { font-family: Arial; padding: 20px; background: #111; color: #fff; }
-    input, button, select { padding: 8px; margin: 5px 0; width: 100%; }
+    input, button { padding: 8px; margin: 5px 0; width: 100%; }
     ul { list-style: none; padding: 0; }
-    li { background: #222; padding: 5px; margin-bottom: 5px; border-radius: 5px; }
+    li { background: #222; padding: 5px; margin-bottom: 5px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+    li span { flex-grow: 1; }
+    button.delete { background: red; color: #fff; border: none; cursor: pointer; padding: 4px 8px; border-radius: 4px; }
+    button.delete:hover { background: darkred; }
   </style>
 </head>
 <body>
@@ -17,11 +20,14 @@
   <input id="puntos" type="number" min="1" placeholder="Ej: 5">
   <label>Premio:</label>
   <input id="nombre" placeholder="Nombre del premio">
-  <button onclick="agregarPremio()">Añadir</button>
+  <button onclick="agregarPremio()">Añadir Premio</button>
+  <hr>
   <ul id="lista"></ul>
 
   <script>
     let premios = [];
+
+    // Cargar premios desde el JSON
     fetch('premios.json')
       .then(res => res.json())
       .then(data => {
@@ -29,6 +35,23 @@
         render();
       });
 
+    // Renderizar la lista de premios
+    function render() {
+      const lista = document.getElementById('lista');
+      lista.innerHTML = '';
+      premios.forEach(cat => {
+        cat.premios.forEach((premio, i) => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <span><strong>${cat.puntos} pts:</strong> ${premio}</span>
+            <button class="delete" onclick="eliminarPremio(${cat.puntos}, ${i})">❌</button>
+          `;
+          lista.appendChild(li);
+        });
+      });
+    }
+
+    // Añadir premio
     function agregarPremio() {
       const puntos = parseInt(document.getElementById('puntos').value);
       const nombre = document.getElementById('nombre').value.trim();
@@ -42,16 +65,15 @@
       }
       categoria.premios.push(nombre);
       render();
+      document.getElementById('nombre').value = '';
     }
 
-    function render() {
-      const lista = document.getElementById('lista');
-      lista.innerHTML = '';
-      premios.forEach(cat => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${cat.puntos} pts:</strong> ${cat.premios.join(', ')}`;
-        lista.appendChild(li);
-      });
+    // Eliminar premio
+    function eliminarPremio(puntos, index) {
+      const categoria = premios.find(c => c.puntos === puntos);
+      if (!categoria) return;
+      categoria.premios.splice(index, 1);
+      render();
     }
   </script>
 </body>
