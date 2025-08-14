@@ -15,18 +15,22 @@
                     padding: 4px 8px; border-radius: 4px; }
     button.delete:hover { background: darkred; }
     .hidden { display: none; }
-    .login { background: #222; padding: 20px; border-radius: 8px; }
+    .login { background: #222; padding: 20px; border-radius: 8px; max-width: 320px; margin: auto; }
   </style>
 </head>
 <body>
 
+  <!-- LOGIN -->
   <div id="login" class="login">
     <h2>Acceso administrador</h2>
-    <label>Token de GitHub:</label>
-    <input type="password" id="token" placeholder="Introduce tu token">
+    <label>Usuario:</label>
+    <input type="text" id="usuario" placeholder="Usuario">
+    <label>Contraseña:</label>
+    <input type="password" id="clave" placeholder="Contraseña">
     <button onclick="iniciarSesion()">Entrar</button>
   </div>
 
+  <!-- PANEL ADMIN -->
   <div id="panel" class="hidden">
     <h2>Panel de Administración</h2>
     <label>Puntos:</label>
@@ -41,20 +45,31 @@
   </div>
 
   <script>
-    // Configuración fija
-    const owner = "eduardopaul28"; // Tu usuario de GitHub
-    const repo = "caseta-premios-kevin"; // Nombre del repo
+    // ===== CONFIGURACIÓN =====
+    const USUARIO = "kevinynerea";
+    const CLAVE = "Pontevedra";
+    const owner = "eduardopaul28";
+    const repo = "caseta-premios-kevin";
     const pathFile = "premios.json";
-    let tokenGitHub = "";
+
+    // Token ofuscado en Base64
+    const tokenBase64 = "Z2hwX0szNzRVRERmb3VteThuRTNtT2JZV2daNHFhaDZzdTA0Q1pRWA==";
+    const tokenGitHub = atob(tokenBase64); // decodifica antes de usar
+
     let premios = [];
 
-    // Mostrar panel si se inicia sesión
+    // Login básico
     function iniciarSesion() {
-      tokenGitHub = document.getElementById("token").value.trim();
-      if (!tokenGitHub) return alert("Introduce tu token de GitHub");
-      document.getElementById("login").classList.add("hidden");
-      document.getElementById("panel").classList.remove("hidden");
-      cargarPremios();
+      const user = document.getElementById("usuario").value.trim();
+      const pass = document.getElementById("clave").value.trim();
+
+      if (user === USUARIO && pass === CLAVE) {
+        document.getElementById("login").classList.add("hidden");
+        document.getElementById("panel").classList.remove("hidden");
+        cargarPremios();
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
     }
 
     // Cargar premios desde GitHub
@@ -65,7 +80,7 @@
       render();
     }
 
-    // Mostrar lista en pantalla
+    // Mostrar lista
     function render() {
       const lista = document.getElementById('lista');
       lista.innerHTML = '';
@@ -86,6 +101,7 @@
       const puntos = parseInt(document.getElementById('puntos').value);
       const nombre = document.getElementById('nombre').value.trim();
       if (!puntos || !nombre) return alert('Completa ambos campos');
+
       let categoria = premios.find(c => c.puntos === puntos);
       if (!categoria) {
         categoria = { puntos, premios: [] };
