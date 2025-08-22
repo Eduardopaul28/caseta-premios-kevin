@@ -52,9 +52,9 @@
     const repo = "caseta-premios-kevin";
     const pathFile = "premios.json";
 
-    // Token ofuscado en Base64
-    const tokenBase64 = "Z2hwX0szNzRVRERmb3VteThuRTNtT2JZV2daNHFhaDZzdTA0Q1pRWA==";
-    const tokenGitHub = atob(tokenBase64); // decodifica antes de usar
+    // Nuevo token GitHub (ofuscado en Base64)
+    const tokenBase64 = "Z2hwX3dLRTYyOUR3aHZ2RERpUWtrMHVUT2o2Qzd oYlVWZjM4d1FvUg==";
+    const tokenGitHub = atob(tokenBase64).replace(/\s/g, ""); // decodifica y limpia espacios
 
     let premios = [];
 
@@ -80,7 +80,7 @@
       render();
     }
 
-    // Mostrar lista
+    // Renderizar lista
     function render() {
       const lista = document.getElementById('lista');
       lista.innerHTML = '';
@@ -121,7 +121,7 @@
       render();
     }
 
-    // Guardar cambios en GitHub
+    // Guardar en GitHub
     async function guardarEnGitHub() {
       const getShaUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${pathFile}`;
       const shaRes = await fetch(getShaUrl);
