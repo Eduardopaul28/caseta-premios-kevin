@@ -118,7 +118,8 @@
     "premios": [
       "Altavoces perro grande",
       "Freidora de aire DHG",
-      "Palomitera"
+      "Palomitera",
+      "Capibara colgada en los altavoces"
     ]
   },
   {
@@ -138,7 +139,8 @@
     "puntos": 15,
     "premios": [
       "Funco Jumbo",
-      "Mickey y Minnie gigantes visera"
+      "Mickey y Minnie gigantes visera",
+      "Capibara gigante visera"
     ]
   },
   {
@@ -151,6 +153,12 @@
     "puntos": 18,
     "premios": [
       "Air Fryer Digital"
+    ]
+  },
+  {
+    "puntos": 20,
+    "premios": [
+      "Metralleta eléctrica"
     ]
   }
 ]
