@@ -4,11 +4,12 @@
     "premios": [
       "Pistolas de bolas amarillas",
       "Labubu pequeño",
-      "Llavero stich",
       "Funkos pop",
       "Peluche pequeño de debajo de los globos",
       "Sobre de cartas",
-      "Labubu en caja sorpresa"
+      "Llavero",
+      "Ajitos",
+      "Bombilla led"
     ]
   },
   {
@@ -20,9 +21,11 @@
       "Labubu peluche pequeño",
       "Unicornio corazon azul o rosa",
       "Tira de luces led",
-      "Bombilla disco",
-      "Auriculares RT12",
-      "Stich con pelo"
+      "Stich con pelo",
+      "Labubu sorpresa en caja",
+      "Aguacate brillante",
+      "Palo selfi",
+      "Auriculares Air 7"
     ]
   },
   {
@@ -30,10 +33,7 @@
     "premios": [
       "Aguacate pared",
       "Stich azul puerta con pelo",
-      "Pikachu",
-      "Minion",
       "Serpiente negra",
-      "Perro salchicha blanco o negro",
       "Kuromi",
       "Peluche del techo de dentro",
       "Super Mario elefante",
@@ -46,8 +46,9 @@
       "Dragon en huevo verde o rosa",
       "Labubu peluche grande",
       "Minecraft",
-      "Capibara 32cm",
-      "Toro Gran Prix"
+      "Toro Gran Prix",
+      "Auriculares IA",
+      "Auriculares P9"
     ]
   },
   {
@@ -67,7 +68,6 @@
       "Stich rosa o azul de pie",
       "Peluche estanteria",
       "Desdentado",
-      "Bulbasur",
       "Unicornio de visera",
       "Kuromi con cuerno multicolor",
       "Lampara de brillo",
@@ -118,7 +118,6 @@
     "premios": [
       "Altavoces perro grande",
       "Freidora de aire DHG",
-      "Capibara visera con ojo de bola ultima fila de visera",
       "Palomitera"
     ]
   },
@@ -138,11 +137,8 @@
   {
     "puntos": 15,
     "premios": [
-      "Metralleta M4 marca Saigo",
       "Funco Jumbo",
-      "Mickey y Minnie gigantes visera",
-      "Capibara mochila patatas fritas visera",
-      "Capibara gigante colgada en altavoces"
+      "Mickey y Minnie gigantes visera"
     ]
   },
   {
