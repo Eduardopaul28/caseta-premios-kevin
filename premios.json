@@ -24,7 +24,6 @@
       "Focas Rosas",
       "Demogorgon pared",
       "Aguacates con capibara",
-      "Pokemon cadena",
       "Peach cadena",
       "Auriculares wireless Headphone",
       "Altavoz yoroto colors series",
@@ -53,7 +52,9 @@
       "Altavoz Speak Blue",
       "Rattatui",
       "Desdentado blanco o negro",
-      "Capibara con patatas o pollo"
+      "Capibara con patatas o pollo",
+      "Pokemon cadenas",
+      "Power Bank"
     ]
   },
   {
@@ -61,30 +62,20 @@
     "premios": [
       "Stich que habla",
       "Gengar",
-      "Capibara con mochila",
-      "Baby yoda",
-      "Gato rosa visera",
-      "Perro con hueso",
-      "Oso panda con bambu",
       "Oso panda estanteria",
-      "Vaca estanteria",
-      "Stich rosa o azul de pie",
-      "Peluche estanteria",
-      "Desdentado",
-      "Lampara de brillo",
-      "Lampara bola de plasma",
       "Pistola de masaje",
-      "South park"
+      "South park",
+      "Stich visera rosa,azul,lila o azul clarito",
+      "Secador de pelo"
     ]
   },
   {
     "puntos": 5,
     "premios": [
       "Eevee",
-      "Altavoces de perro mediano",
       "Altavoces G",
-      "Peluche south park",
-      "Proyector Astronauta"
+      "Aspirabot pequeño",
+      "Estación de carga bambu"
     ]
   },
   {
@@ -94,25 +85,30 @@
   {
     "puntos": 7,
     "premios": [
-      "Harry potter y Hedwing"
+      "Sonic 70 cm",
+      "Aspirabot grande"
     ]
   },
   {
     "puntos": 8,
-    "premios": []
+    "premios": [
+      "Minnie 60 cm"
+    ]
   },
   {
     "puntos": 9,
     "premios": [
-      "Capibara 60 cm visera",
-      "Altavoces grandes estanteria central",
-      "Sonic"
+      "Altavoz grande DHG",
+      "Altavoz 3 estanteria"
     ]
   },
   {
     "puntos": 10,
     "premios": [
-      "Subfusil M16 AA"
+      "Subfusil M16 AA",
+      "Stich o Ángel sentados visera",
+      "Minnie 60 cm",
+      "Animales Disney con sonido 60 cm"
     ]
   },
   {
@@ -120,7 +116,9 @@
     "premios": [
       "Altavoces perro grande",
       "Freidora de aire DHG",
-      "Palomitera"
+      "Palomitera",
+      "Dron con camara",
+      "Fungo Jumbo"
     ]
   },
   {
@@ -139,27 +137,33 @@
   {
     "puntos": 15,
     "premios": [
-      "Funco Jumbo",
       "Capibara gigante visera",
-      "Dron con camara"
+      "Freidora de aire Jata"
     ]
   },
   {
     "puntos": 16,
     "premios": [
-      "Altavoz oso blanco o rojo"
+      "Altavoz oso blanco o rojo",
+      "Altavoz Hifi"
     ]
   },
   {
     "puntos": 18,
-    "premios": [
-      "Air Fryer Digital"
-    ]
+    "premios": []
   },
   {
     "puntos": 20,
     "premios": [
-      "Metralleta eléctrica"
+      "Metralleta eléctrica",
+      "Altavoz torre triple"
+    ]
+  },
+  {
+    "puntos": 27,
+    "premios": [
+      "Dumbo 120 cm",
+      "Aspiradora Jata"
     ]
   }
 ]
