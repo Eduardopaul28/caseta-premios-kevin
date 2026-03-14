@@ -66,7 +66,9 @@
       "Pistola de masaje",
       "South park",
       "Stich visera rosa,azul,lila o azul clarito",
-      "Secador de pelo"
+      "Secador de pelo",
+      "Snorlax",
+      "Elefante con pelo"
     ]
   },
   {
@@ -75,7 +77,8 @@
       "Eevee",
       "Altavoces G",
       "Aspirabot pequeño",
-      "Estación de carga bambu"
+      "Estación de carga bambu",
+      "Altavoz de perro mediano"
     ]
   },
   {
@@ -99,7 +102,9 @@
     "puntos": 9,
     "premios": [
       "Altavoz grande DHG",
-      "Altavoz 3 estanteria"
+      "Altavoz 3 estanteria",
+      "Bad Day",
+      "Pokemon fosil"
     ]
   },
   {
@@ -138,7 +143,8 @@
     "puntos": 15,
     "premios": [
       "Capibara gigante visera",
-      "Freidora de aire Jata"
+      "Freidora de aire Jata",
+      "Jurassic World 82 cm"
     ]
   },
   {
@@ -150,7 +156,10 @@
   },
   {
     "puntos": 18,
-    "premios": []
+    "premios": [
+      "Minnie o Mickey 120 cm",
+      "Sonic Prime 100 cm"
+    ]
   },
   {
     "puntos": 20,
@@ -163,7 +172,8 @@
     "puntos": 27,
     "premios": [
       "Dumbo 120 cm",
-      "Aspiradora Jata"
+      "Aspiradora Jata",
+      "Stich colgado en los altavoces"
     ]
   }
 ]
