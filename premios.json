@@ -54,7 +54,8 @@
       "Desdentado blanco o negro",
       "Capibara con patatas o pollo",
       "Pokemon cadenas",
-      "Power Bank"
+      "Power Bank",
+      "Altavoz G"
     ]
   },
   {
@@ -75,7 +76,6 @@
     "puntos": 5,
     "premios": [
       "Eevee",
-      "Altavoces G",
       "Aspirabot pequeño",
       "Estación de carga bambu",
       "Altavoz de perro mediano"
@@ -119,7 +119,6 @@
   {
     "puntos": 12,
     "premios": [
-      "Altavoces perro grande",
       "Freidora de aire DHG",
       "Palomitera",
       "Dron con camara",
@@ -128,9 +127,7 @@
   },
   {
     "puntos": 13,
-    "premios": [
-      "Crahs bandicoot visera"
-    ]
+    "premios": []
   },
   {
     "puntos": 14,
