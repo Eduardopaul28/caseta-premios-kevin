@@ -12,7 +12,9 @@
       "Mini masajeador",
       "Labubu en caja",
       "Balón de fútbol",
-      "Bufanda de futbol"
+      "Bufanda de futbol",
+      "Reloj smarch balance",
+      "Pistola saigo pequeña"
     ]
   },
   {
@@ -32,7 +34,9 @@
       "Micrófono",
       "Pistola Airsoft Gun",
       "Peluche techo colgado dentro de la caseta",
-      "Eevee pequeño"
+      "Eevee pequeño",
+      "Lámpara globo terráqueo",
+      "Kit vlogguing"
     ]
   },
   {
@@ -55,7 +59,9 @@
       "Capibara con patatas o pollo",
       "Pokemon cadenas",
       "Power Bank",
-      "Altavoz G"
+      "Altavoz G",
+      "Pistola metal",
+      "Lámpara plasma"
     ]
   },
   {
@@ -69,7 +75,8 @@
       "Stich visera rosa,azul,lila o azul clarito",
       "Secador de pelo",
       "Snorlax",
-      "Elefante con pelo"
+      "Elefante con pelo",
+      "Batidora de pedestal"
     ]
   },
   {
@@ -78,12 +85,16 @@
       "Eevee",
       "Aspirabot pequeño",
       "Estación de carga bambu",
-      "Altavoz de perro mediano"
+      "Altavoz de perro mediano",
+      "Cafetera de goteo RT"
     ]
   },
   {
     "puntos": 6,
-    "premios": []
+    "premios": [
+      "Plancha de ropa vertical",
+      "Máquina de palomitas pequeña RT"
+    ]
   },
   {
     "puntos": 7,
@@ -122,7 +133,8 @@
       "Freidora de aire DHG",
       "Palomitera",
       "Dron con camara",
-      "Fungo Jumbo"
+      "Fungo Jumbo",
+      "Metralleta SaigoM4"
     ]
   },
   {
@@ -133,7 +145,8 @@
     "puntos": 14,
     "premios": [
       "Toro Gran Prix Gigante",
-      "Maquina de algodon de azucar"
+      "Maquina de algodon de azucar",
+      "Máquina palomitas de maíz grande RT"
     ]
   },
   {
@@ -171,6 +184,12 @@
       "Dumbo 120 cm",
       "Aspiradora Jata",
       "Stich colgado en los altavoces"
+    ]
+  },
+  {
+    "puntos": 30,
+    "premios": [
+      "Tablet"
     ]
   }
 ]
