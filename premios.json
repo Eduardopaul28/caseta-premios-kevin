@@ -76,7 +76,8 @@
       "Snorlax",
       "Elefante con pelo",
       "Batidora de pedestal",
-      "Demogorgon 43 cm"
+      "Demogorgon 43 cm",
+      "Stich con muñeco"
     ]
   },
   {
@@ -106,9 +107,7 @@
   },
   {
     "puntos": 8,
-    "premios": [
-      "Minnie 60 cm"
-    ]
+    "premios": []
   },
   {
     "puntos": 9,
