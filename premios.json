@@ -5,8 +5,6 @@
       "Pistolas de bolas amarillas",
       "Funkos pop",
       "Peluche pequeño de debajo de los globos",
-      "Bombilla disco",
-      "Cargador inalámbrico E-12",
       "Sobres Kpop Demon Hunters",
       "Sobres pokemon"
     ]
@@ -20,11 +18,8 @@
       "Kit vlogguing",
       "Pistola Saigo Defense pequeña",
       "Auriculares i12",
-      "Reloj",
       "Bufanda de futbol",
-      "Muñecas Kpop Demon Hunters",
       "Guerreras K-pop 20cm",
-      "Balón de futbol",
       "Labubu vocación",
       "Princesa peach colgada en cadena"
     ]
@@ -35,27 +30,20 @@
       "Serpiente negra",
       "Lampara neon",
       "Toro Gran Prix",
-      "Lámpara de lava o brillo",
       "Stich de pie azul o rosa",
-      "Helicóptero",
       "Lámpara de uñas",
       "Gafas smart",
       "Altavoz Speak Blue",
       "Capibara con patatas o pollo",
-      "Pokemon cadenas",
       "Altavoz G",
-      "Lámpara plasma",
       "Demogorgon pared",
       "Pistola Airsoft Gun",
       "Auriculares Pro 7",
       "Cargador triple wireless Charguer",
-      "Magnetic charguer",
       "Cargador inalámbrico E-212",
-      "Altavoz yoroto",
       "Microfono",
       "Auriculares Wireless Headphone",
       "Marsupilami",
-      "Perro salchicha 70 cm",
       "Pistola M82"
     ]
   },
@@ -64,8 +52,6 @@
     "premios": [
       "Stich que habla",
       "Gengar",
-      "Oso panda estanteria",
-      "Pistola de masaje",
       "South park",
       "Secador de pelo",
       "Snorlax",
@@ -86,27 +72,18 @@
   },
   {
     "puntos": 5,
-    "premios": [
-      "Eevee",
-      "Aspirabot pequeño",
-      "Estación de carga bambu",
-      "Altavoz de perro mediano",
-      "Cafetera de goteo RT",
-      "Cámara sport"
-    ]
+    "premios": []
   },
   {
     "puntos": 6,
     "premios": [
       "Plancha de ropa vertical",
-      "Máquina de palomitas pequeña RT",
       "Stich visera azul, rosa, lila o azul oscuro"
     ]
   },
   {
     "puntos": 7,
     "premios": [
-      "Sonic 70 cm",
       "Aspirabot grande",
       "Funko Kpop Demon Hunters",
       "Funco jumbo"
@@ -128,10 +105,7 @@
   {
     "puntos": 10,
     "premios": [
-      "Subfusil M16 AA",
-      "Stich o Ángel sentados visera",
-      "Minnie 60 cm",
-      "Animales Disney con sonido 60 cm"
+      "Minnie 60 cm"
     ]
   },
   {
@@ -149,7 +123,6 @@
   {
     "puntos": 14,
     "premios": [
-      "Toro Gran Prix Gigante",
       "Maquina de algodon de azucar",
       "Máquina palomitas de maíz grande RT"
     ]
@@ -160,14 +133,12 @@
       "Capibara gigante visera",
       "Freidora de aire Jata",
       "Jurassic World 82 cm",
-      "Dron con camara",
-      "Guerreras K-pop grandes"
+      "Dron con camara"
     ]
   },
   {
     "puntos": 16,
     "premios": [
-      "Altavoz oso blanco o rojo",
       "Altavoz Hifi"
     ]
   },
@@ -181,15 +152,12 @@
   {
     "puntos": 20,
     "premios": [
-      "Metralleta eléctrica",
       "Freidora de aire Jata"
     ]
   },
   {
     "puntos": 25,
-    "premios": [
-      "Altavoz torre triple"
-    ]
+    "premios": []
   },
   {
     "puntos": 27,
@@ -200,8 +168,6 @@
   },
   {
     "puntos": 30,
-    "premios": [
-      "Tablet"
-    ]
+    "premios": []
   }
 ]
