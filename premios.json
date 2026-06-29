@@ -57,7 +57,6 @@
       "Stich con muñeco",
       "Auriculares Wireless Headphone",
       "Altavoz Súper Bass",
-      "Desdentado blanco,negro o naranja",
       "Game Boss",
       "Yoshy",
       "Mario Bros",
@@ -68,7 +67,9 @@
   },
   {
     "puntos": 5,
-    "premios": []
+    "premios": [
+      "Desdentado Negro, blanco o naranja"
+    ]
   },
   {
     "puntos": 6,
