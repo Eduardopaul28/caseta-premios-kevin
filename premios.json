@@ -6,7 +6,11 @@
       "Funkos pop",
       "Peluche pequeño de debajo de los globos",
       "Sobres Kpop Demon Hunters",
-      "Sobres pokemon"
+      "Sobres pokemon",
+      "Tira led",
+      "Masajeador",
+      "Aire portátil",
+      "Llavero Stich"
     ]
   },
   {
@@ -32,7 +36,6 @@
       "Gafas smart",
       "Altavoz Speak Blue",
       "Capibara con patatas o pollo",
-      "Altavoz G",
       "Demogorgon pared",
       "Pistola Airsoft Gun",
       "Auriculares Pro 7",
@@ -40,7 +43,9 @@
       "Microfono",
       "Auriculares Wireless Headphone",
       "Marsupilami",
-      "Pistola M82"
+      "Pistola M82",
+      "Perro salchicha",
+      "Aguacate"
     ]
   },
   {
@@ -62,13 +67,20 @@
       "Mario Bros",
       "Perro salchicha 90cm",
       "Ratattui",
-      "Peluche de el techo de dentro de la caseta"
+      "Peluche de el techo de dentro de la caseta",
+      "Pistola Ghost Vanguard",
+      "Proyector Astronauta",
+      "Altavoz G",
+      "Pistola de masajes",
+      "Reloj smartwatch Ultra"
     ]
   },
   {
     "puntos": 5,
     "premios": [
-      "Desdentado Negro, blanco o naranja"
+      "Desdentado Negro, blanco o naranja",
+      "Reloj series 11",
+      "Rattatui"
     ]
   },
   {
@@ -82,13 +94,14 @@
     "puntos": 7,
     "premios": [
       "Aspirabot grande",
-      "Funko Kpop Demon Hunters",
-      "Funco jumbo"
+      "Funko Kpop Demon Hunters"
     ]
   },
   {
     "puntos": 8,
-    "premios": []
+    "premios": [
+      "Funco mediano"
+    ]
   },
   {
     "puntos": 9,
@@ -103,7 +116,8 @@
   {
     "puntos": 10,
     "premios": [
-      "Minnie 60 cm"
+      "Minnie 60 cm",
+      "Plancha vertical a vapor"
     ]
   },
   {
@@ -131,7 +145,8 @@
       "Capibara gigante visera",
       "Freidora de aire Jata",
       "Jurassic World 82 cm",
-      "Dron con camara"
+      "Dron con camara",
+      "Funco Jumbo"
     ]
   },
   {
