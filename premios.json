@@ -44,7 +44,8 @@
       "Auriculares Wireless Headphone",
       "Marsupilami",
       "Pistola M82",
-      "Aguacate"
+      "Aguacate",
+      "Stich pijama"
     ]
   },
   {
@@ -184,6 +185,9 @@
   },
   {
     "puntos": 30,
-    "premios": []
+    "premios": [
+      "Dumbo Grande",
+      "Metralleta eléctrica"
+    ]
   }
 ]
