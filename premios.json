@@ -21,7 +21,8 @@
       "Balón de futbol",
       "Maquinilla de afeitar pequeña",
       "Labubu en caja COCA-COLA",
-      "Pistola de masaje pequeña"
+      "Pistola de masaje pequeña",
+      "Tira led"
     ]
   },
   {
@@ -40,7 +41,6 @@
       "Aguacate",
       "Stich pijama",
       "Pistola M-1911",
-      "Cerdito tumbado 45cm",
       "Dead pool 25 cm",
       "Lobezno 25cm",
       "Tiburón perro",
@@ -62,12 +62,10 @@
       "Batidora de pedestal",
       "Demogorgon 43 cm",
       "Stich con muñeco",
-      "Auriculares Wireless Headphone",
       "Game Boss",
       "Yoshy",
       "Mario Bros",
       "Perro salchicha 90cm",
-      "Ratattui",
       "Pistola Ghost Vanguard",
       "Altavoz G",
       "Pistola de masajes",
@@ -93,14 +91,11 @@
   },
   {
     "puntos": 6,
-    "premios": [
-      "Plancha de ropa vertical"
-    ]
+    "premios": []
   },
   {
     "puntos": 7,
     "premios": [
-      "Aspirabot grande",
       "Metralleta M416 a batería",
       "Sonic"
     ]
@@ -134,7 +129,8 @@
       "Freidora de aire DHG",
       "Palomitera",
       "Perro salchicha gigante",
-      "Cerdito salchicha gigante"
+      "Cerdito salchicha gigante",
+      "Gofrera"
     ]
   },
   {
