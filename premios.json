@@ -35,12 +35,8 @@
       "Auriculares Pro 7",
       "Microfono",
       "Marsupilami",
-      "Pistola M82",
       "Aguacate",
-      "Stich pijama",
       "Pistola M-1911",
-      "Dead pool 25 cm",
-      "Lobezno 25cm",
       "Tiburón perro",
       "Capibara patata frita",
       "Peluche techo colgado dentro de la caseta",
@@ -77,7 +73,6 @@
       "Stich visera Azul,Rosa,Lila o Azul clarito",
       "Desdentado Negro,Blanco o Naranja",
       "Lámpara brillo",
-      "Cafetera a Goteo",
       "Peluche Red"
     ]
   },
@@ -128,7 +123,6 @@
       "Freidora de aire DHG",
       "Palomitera",
       "Perro salchicha gigante",
-      "Cerdito salchicha gigante",
       "Gofrera"
     ]
   },
@@ -148,7 +142,6 @@
     "premios": [
       "Capibara gigante visera",
       "Jurassic World 82 cm",
-      "Dron con camara",
       "Funco Jumbo",
       "Metralleta saigo"
     ]
@@ -180,14 +173,10 @@
   },
   {
     "puntos": 27,
-    "premios": [
-      "Aspiradora Jata"
-    ]
+    "premios": []
   },
   {
     "puntos": 30,
-    "premios": [
-      "Dumbo Grande"
-    ]
+    "premios": []
   }
 ]
